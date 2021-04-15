@@ -49,7 +49,8 @@ end
 
 # Méthode pour afficher l'index d'un handle
 def where_is_he (handle)
-  puts "@epenser est à la position #{handle.index("@epenser"+1)} du notre super tableau"
+  puts "@epenser est à la position #{handle.index("@epenser")+1} du notre super tableau"
+  perform
 end
 
 # Méthode pour répartir les handles par nombre de caractères
@@ -60,6 +61,13 @@ def repartition_size(handle)
   puts "Voici la liste de handles à #{number} caractères"
   puts total= handle.select {|element| element.size==number+1 }
   puts "Il y en a au total #{total.count}"
+  puts ""
+  puts "Comme je suis de bonne humeur je te donne tous les totaux :"
+  numb=3
+  until numb == 15
+    puts "Longueur #{numb} caractères ==> #{handle.select {|element| element.size==numb+1 }.count}"
+    numb+=1
+  end
   perform
 end
 
@@ -73,7 +81,7 @@ def perform
   puts "|> Le nombre de handle dans la liste :               \033[1;32m> Tapes 1 <"+"\033[0m"
   puts "|> Le handle le plus court :                         \033[1;32m> Tapes 2 <"+"\033[0m"
   puts "|> Combien il y a de handle contenant 5 caractères : \033[1;32m> Tapes 3 <"+"\033[0m"
-  puts "|> Combien de handle commencent par une majuscule :  \033[1;32m> Tapes 4 <"+"\033[0m"
+  puts "|> Combien de handle qui commencent par une maj :    \033[1;32m> Tapes 4 <"+"\033[0m"
   puts "|> La liste des handles dans l'ordre alphabétique :  \033[1;32m> Tapes 5 <"+"\033[0m"
   puts "|> Trier les handles par taille :                    \033[1;32m> Tapes 6 <"+"\033[0m"
   puts "|> La position de @epenser dans la liste :           \033[1;32m> Tapes 7 <"+"\033[0m"

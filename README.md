@@ -13,7 +13,7 @@
 <li>Quelle est la position dans l'array de la personne @epenser ?</li>
 <li>Sors-moi une répartition des handle par taille de ces derniers (nombre de handle avec 1 caractère, nombre de handle avec 2 caractères, nombre de handle avec 3 caractères, etc)</li>
 </ul>
-<h2>Résultat sur le fichier Ruby 00_journalists.rb.rb</h2>
+<h3>Résultat sur le fichier Ruby 00_journalists..rb</h3>
 <hr>
 
 <h1>Blockchain</h1>
@@ -25,6 +25,6 @@
 <li>Les devises dont le cours est inférieur à 6000</li>
 <li>La devise la plus chère parmi celles dont le cours est inférieur à 6000.</li>
 </ul>
-<h2>Résultat sur le fichier Ruby 01_cryptocurrencies.rb</h2>
+<h3>Résultat sur le fichier Ruby 01_cryptocurrencies.rb</h3>
 
 <hr>
