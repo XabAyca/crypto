@@ -64,7 +64,7 @@ def repartition_size(handle)
   puts ""
   puts "Comme je suis de bonne humeur je te donne tous les totaux :"
   numb=3
-  until numb == 15
+  until numb == 33
     puts "Longueur #{numb} caractères ==> #{handle.select {|element| element.size==numb+1 }.count}"
     numb+=1
   end
