@@ -29,7 +29,7 @@ end
 # Méthode pour afficher le nombre de handles commencant par une maj
 def tri_majuscule(handle)
   handle_withoutA = handle.each {|element| element.slice!(0)}
-  puts "Il y a #{handle_withoutA.count{|element| element[0]== element[0].capitalize}} noms qui commencent par une majuscule"
+  puts "Il y a #{handle_withoutA.count{|element| element[0]=~ /[A-Z]/}} noms qui commencent par une majuscule"
   perform
 end
 
